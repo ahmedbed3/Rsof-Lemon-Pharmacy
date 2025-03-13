@@ -1,0 +1,122 @@
+.container {
+    @media only screen and (min-width: 1200px) {
+        max-width: 1450px;
+    }
+}
+
+body {
+    background-color: $white;
+    color: $secondary;
+}
+
+a {
+    color: $secondary;
+    text-decoration: none;
+
+    &:hover {
+        color: $secondary;
+    }
+}
+
+p {
+    margin-bottom: 0;
+}
+
+.btn-primary {
+    background: $primary;
+    border: none;
+    border-radius: 40px;
+    color: $white;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: $font500;
+    padding: 8px 14px;
+
+    &:hover,
+    &:focus,
+    &:active {
+        background: $btn-hover;
+        box-shadow: none;
+        color: $white;
+        text-decoration: none;
+        border-color: $primary;
+    }
+
+    &:not(:disabled):not(.disabled):active,
+    &.btn-primary:not(:disabled):not(.disabled):active:focus {
+        background: $btn-hover;
+        color: $secondary;
+        text-decoration: none;
+        box-shadow: none;
+    }
+}
+
+//checkbox styling
+input[type=checkbox]:checked {
+    background-color: $primary;
+    opacity: 1;
+}
+
+input[type=checkbox] {
+    -webkit-appearance: none;
+    background: none;
+    border-radius: 2px;
+    border: 2px solid $primary;
+    cursor: pointer;
+    height: 20px;
+    line-height: 0;
+    margin: 0 .6em 0 0;
+    opacity: .5;
+    outline: 0;
+    padding: 0 !important;
+    position: relative;
+    vertical-align: text-bottom;
+    width: 20px;
+
+    @media screen and (max-width: 1199.98px) {
+        height: 16px;
+        width: 16px;
+    }
+
+    @media only screen and (max-width: 768px) {
+        height: 18px;
+        width: 18px;
+    }
+}
+
+input[type=checkbox]:hover {
+    opacity: 1;
+}
+
+input[type=checkbox]:before {
+    content: '';
+    border: solid $white;
+    border-width: 0 2px 2px 0;
+    height: 12px;
+    margin: -1px -1px 0 -1px;
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    transform: rotate(45deg) translate(-50%, -50%);
+    width: 6px;
+    z-index: 2;
+}
+
+label {
+    cursor: pointer;
+}
+
+.heading {
+    margin-bottom: 20px;
+
+    &__text {
+        font-size: 33px;
+        font-weight: $font700;
+
+        @media only screen and (max-width: 767.98px) {
+            font-size: 26px;
+            font-weight: $font700;
+        }
+    }
+}

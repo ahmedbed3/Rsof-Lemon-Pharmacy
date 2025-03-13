@@ -1,0 +1,119 @@
+$ns: modal;
+
+.#{$ns} {
+    @media only screen and (max-width: 767.98px) {
+        padding-left: 0;
+    }
+
+    &__modal-wrap {
+        background-color: $white;
+        border-radius: 8px;
+        margin: 150px auto;
+        max-width: 700px;
+        transition: transform .3s ease-out,-webkit-transform .3s ease-out;
+    }
+
+    &__modal-wrapper {
+        background-color: $white;
+        max-width: 350px;
+        margin: 150px auto;
+        transition: transform .3s ease-out,-webkit-transform .3s ease-out;
+    }
+
+    &__header {
+        border: none;
+        display: block;
+        padding: 30px 20px 20px 25px;
+        position: relative;
+
+        &__heading {
+            color: $secondary;
+            font-size: 32px;
+            font-weight: $font700;
+
+            @media only screen and (max-width: 767.98px) {
+                font-size: 24px;
+            }
+        }
+
+        &__para {
+            font-size: 16px;
+            font-weight: $font600;
+        }
+
+        &__close-btn {
+            font-size: 25px;
+            font-weight: $font700;
+            position: absolute;
+                top: 13px;
+                right: 18px;
+        }
+    }
+    &__body {
+        padding: 0 25px;
+        &__label {
+            color: $secondary;
+            font-size: 16px;
+            font-weight: $font600;
+        }
+
+        &__input {
+            border-radius: 6px;
+            border: 1px solid $grey3;
+            margin-bottom: 10px;
+            padding: 15px;
+            width: 100%;
+
+            &::placeholder {
+                color: $grey4;
+                font-size: 16px;
+                font-weight: $font500;
+            }
+            &:focus-visible {
+                outline: none;
+            }
+        }
+
+        &__d-text {
+            font-size: 14px;
+            margin-top: -6px;
+        }
+
+        &__title {
+            color: $secondary;
+            font-size: 18px;
+            font-weight: $font600;
+        }
+
+        &__text {
+            color: $secondary;
+            font-size: 16px;
+            font-weight: $font400;
+        }
+    }
+
+    &__footer {
+        background-color: $grey1;
+        display: flex;
+            align-items: center;
+            justify-content: space-between;
+        padding: 25px;
+
+        &__cancel {
+            font-size: 16px;
+            font-weight: $font700;
+            text-decoration: underline;
+        }
+
+        &__subscribe {
+            font-size: 16px;
+            font-weight: $font700;
+        }
+    }
+}
+
+.modal-open {
+    header {
+        z-index: 1;
+    }
+}
