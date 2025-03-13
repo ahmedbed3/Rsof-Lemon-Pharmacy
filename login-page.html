@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Login Page</title>
+    <link rel="icon" type="image/x-icon" href="" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <div class="login">
+        <div class="container">
+            <div class="row" style="justify-content: center;">
+                <div class="col-md-7 col-12">
+                    <section class="login__wrap">
+                        <div class="login__wrap__content">
+                            <h3 class="login__wrap__content__heading">
+                                Login
+                            </h3>
+                            <form class="login__wrap__form">
+                                <div class="login__wrap__form__inner mb-2">
+                                    <label class="login__wrap__form__label" for="lastname">Email</label>
+                                    <input class="login__wrap__form__input" type="email" id="email" name="Input"
+                                        placeholder="" required>
+                                    <!-- <p class="login__wrap__form__erorr-msg">You have entered an invalid format.</p> -->
+                                </div>
+                                <div class="login__wrap__form__inner">
+                                    <label class="login__wrap__form__label" for="password">Password</label>
+                                    <input class="login__wrap__form__input" type="password" id="password"
+                                        name="password" placeholder="" minlength="8">
+                                </div>
+                            </form>
+                            <div class="login__wrap__f-pass-wrap">
+                                <div class="login__wrap__checkbox-holder">
+                                    <label><input type="checkbox">
+                                        <span class="login__wrap__checkbox-holder__checkmark checkmark">Remember me
+                                        </span>
+                                    </label>
+                                </div>
+                                <div>
+                                    <div>
+                                        <button type="button" class="login__wrap__forgot-pass" data-toggle="modal"
+                                            data-target="#forgot-Modal" data-whatever="@mdo">Forgot Password?</button>
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="login__wrap__c-account">
+                                <p class="login__wrap__c-account__text">
+                                    Dont have an account? <a class="login__wrap__c-account__link">Sign Up / Create Account</a>
+                                </p>
+                            </div>
+                            <div class="">
+                                
+                            </div>
+                            <a target="_blank" class="login__wrap__content__btn btn-primary">Log in</a>
+                        </div>
+                        <!-- Modal -->
+                        <div class="modal fade" id="forgot-Modal" tabindex="-1" role="dialog"
+                            aria-labelledby="ModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal__modal-wrap" role="document">
+                                <div class="modal-content">
+                                    <div class="modal__header">
+                                        <h2 class="modal__header__heading">Reset Your Password</h2>
+                                        <p class="modal__header__para">Fill the fields to reset your password.</p>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span class="modal__header__close-btn" aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal__body">
+                                        <form>
+                                            <div class="row justify-content-center">
+                                                <div class="col-12">
+                                                    <div class="login__wrap__form__inner">
+                                                        <label class="login__wrap__form__label" for="password">Enter New
+                                                            Password</label>
+                                                        <input class="login__wrap__form__input" type="password"
+                                                            id="password" name="password"
+                                                            placeholder="Enter New Password" minlength="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="login__wrap__form__inner">
+                                                        <label class="login__wrap__form__label" for="password">Confirm
+                                                            New Password</label>
+                                                        <input class="login__wrap__form__input" type="password"
+                                                            id="password" name="password"
+                                                            placeholder="Re-enter New Password" minlength="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="modal__footer">
+                                        <a href="#" class="modal__footer__cancel" type="button"
+                                            data-dismiss="modal">Cancel</a>
+                                        <button type="button" class="modal__footer__subscribe btn-primary">Confirm
+                                            Changes</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
