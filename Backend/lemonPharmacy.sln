@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lemonPharmacy.API", "lemonPharmacy\lemonPharmacy.API.csproj", "{17EE5A75-B95E-4AA6-9A0A-C265D8E083A1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lemonPharmacy.ApplicationLayer", "lemonPharmacy.ApplicationLayer\lemonPharmacy.ApplicationLayer.csproj", "{8F4C378C-53FD-4D07-9817-41229D3B5599}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lemonPharmacy.Common", "lemonPharmacy.Common\lemonPharmacy.Common.csproj", "{9287F008-32CD-4AB9-8DD9-E9F6A3117114}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lemonPharmacy.Domain", "lemonPharmacy.Domain\lemonPharmacy.Domain.csproj", "{7E6C7809-ADE7-4B3C-87EC-4D973CCB747F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lemonPharmacy.Infrastructure", "lemonPharmacy.Infrastructure\lemonPharmacy.Infrastructure.csproj", "{7279EA0C-704D-4662-8767-FE813E67155A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{17EE5A75-B95E-4AA6-9A0A-C265D8E083A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17EE5A75-B95E-4AA6-9A0A-C265D8E083A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17EE5A75-B95E-4AA6-9A0A-C265D8E083A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17EE5A75-B95E-4AA6-9A0A-C265D8E083A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F4C378C-53FD-4D07-9817-41229D3B5599}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F4C378C-53FD-4D07-9817-41229D3B5599}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F4C378C-53FD-4D07-9817-41229D3B5599}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F4C378C-53FD-4D07-9817-41229D3B5599}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9287F008-32CD-4AB9-8DD9-E9F6A3117114}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9287F008-32CD-4AB9-8DD9-E9F6A3117114}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9287F008-32CD-4AB9-8DD9-E9F6A3117114}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9287F008-32CD-4AB9-8DD9-E9F6A3117114}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E6C7809-ADE7-4B3C-87EC-4D973CCB747F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E6C7809-ADE7-4B3C-87EC-4D973CCB747F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E6C7809-ADE7-4B3C-87EC-4D973CCB747F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E6C7809-ADE7-4B3C-87EC-4D973CCB747F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7279EA0C-704D-4662-8767-FE813E67155A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7279EA0C-704D-4662-8767-FE813E67155A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7279EA0C-704D-4662-8767-FE813E67155A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7279EA0C-704D-4662-8767-FE813E67155A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
